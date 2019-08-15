@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "custom-breadcrum": [
+        "dist/custom-breadcrum"
+      ],
+      "custom-breadcrum/*": [
+        "dist/custom-breadcrum/*"
+      ]
+    }
   }
 }

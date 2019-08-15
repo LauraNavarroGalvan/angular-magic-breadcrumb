@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "custom-breadcrum": {
+      "root": "projects/custom-breadcrum",
+      "sourceRoot": "projects/custom-breadcrum/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/custom-breadcrum/tsconfig.lib.json",
+            "project": "projects/custom-breadcrum/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/custom-breadcrum/src/test.ts",
+            "tsConfig": "projects/custom-breadcrum/tsconfig.spec.json",
+            "karmaConfig": "projects/custom-breadcrum/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/custom-breadcrum/tsconfig.lib.json",
+              "projects/custom-breadcrum/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-breadcrum"
