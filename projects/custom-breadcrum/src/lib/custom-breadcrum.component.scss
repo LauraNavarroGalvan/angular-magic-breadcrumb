@@ -1,0 +1,52 @@
+#dynamic-breadcrumb {
+  background-color: #FFFFFF;
+}
+.navigation{
+  display: block;
+}
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  border-radius: .25rem;
+  background-color: #FFFFFF;
+  font-size: 15px;
+  padding: 31px 30px 10px;
+  color: #898989;
+  font-weight: 300;
+  max-width: 1216px;
+  margin: 0 auto;
+  .breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    color: #6c757d;
+    content: "/";
+    padding-right: 5px;
+  }
+  .breadcrumb-item {
+    padding-left: 5px;
+    &:not(.active) {
+      cursor: pointer;
+    }
+    &.active {
+      color: #707070;
+      font-weight: 400;
+    }
+  }
+
+  // Min 768px
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-bottom: 22px;
+  }
+
+  // Min 992px
+  @media (min-width: 992px) {
+    padding-left: 45px;
+  }
+
+  // Min 1200px
+  @media (min-width: 1200px) {
+    font-size: 17px;
+    padding: 40px 50px 10px;
+  }
+}
