@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {CustomBreadcrumModule} from "custom-breadcrum";
+import {AngularMagicBreadcrumbModule} from "angular-magic-breadcrumb";
 import {RouterModule, Routes} from "@angular/router";
 import { AppDetailsComponent } from './app-details/app-details.component';
 import {AppChildsComponent} from "./app-childs.component";
@@ -31,7 +31,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    CustomBreadcrumModule.forRoot(),
+    AngularMagicBreadcrumbModule.forRoot(),
     RouterModule.forRoot(appRoutes)
   ],
   providers: [],

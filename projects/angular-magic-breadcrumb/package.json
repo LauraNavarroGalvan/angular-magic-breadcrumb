@@ -1,0 +1,27 @@
+{
+  "name": "angular-magic-breadcrumb",
+  "version": "0.0.2",
+  "author": {
+    "name": "Laura Cristina Navarro Galvan",
+    "email": "laura.ngalvan@gmail.com"
+  },
+  "keywords": [
+    "Angular",
+    "Library",
+    "Breadcrumb",
+    "Dynamic",
+    "self-generated-breadcrumb",
+    "angular-magic-breadcrumb",
+    "global-breadcrumb",
+    "angular-breadcrumb",
+    "angular-global-breadcrumb"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LauraNavarroGalvan/angular-breadcrumb.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^7.1.0",
+    "@angular/core": "^7.1.0"
+  }
+}

@@ -19,11 +19,11 @@
       "dom"
     ],
     "paths": {
-      "custom-breadcrum": [
-        "dist/custom-breadcrum"
+      "angular-magic-breadcrumb": [
+        "dist/angular-magic-breadcrumb"
       ],
-      "custom-breadcrum/*": [
-        "dist/custom-breadcrum/*"
+      "angular-magic-breadcrumb/*": [
+        "dist/angular-magic-breadcrumb/*"
       ]
     }
   }

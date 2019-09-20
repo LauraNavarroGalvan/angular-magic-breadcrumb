@@ -4,7 +4,7 @@ import {BehaviorSubject} from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class CustomBreadcrumService {
+export class AngularMagicBreadcrumbService {
   // variables of type Behaviour Subject are created, this is because this type allows us to create observables of this variables
   private breadcrumbStructure = new BehaviorSubject([]);
   breadcrumbStructure_ = this.breadcrumbStructure.asObservable();

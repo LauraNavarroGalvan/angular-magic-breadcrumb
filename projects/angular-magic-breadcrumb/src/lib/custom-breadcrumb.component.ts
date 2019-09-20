@@ -1,16 +1,16 @@
-import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {NavigationEnd, Router} from "@angular/router";
-import {CustomBreadcrumService} from "./custom-breadcrum.service";
+import {AngularMagicBreadcrumbService} from "./angular-magic-breadcrumb.service";
 import {filter} from "rxjs/operators";
 import {Location} from '@angular/common';
 
 @Component({
-  selector: 'lib-custom-breadcrum',
-  templateUrl: './custom-breadcrum.component.html',
-  styleUrls: ['./custom-breadcrum.component.scss'],
-  providers: [CustomBreadcrumService]
+  selector: 'lng-self-generated-breadcrumb',
+  templateUrl: './custom-breadcrumb.component.html',
+  styleUrls: ['./custom-breadcrumb.component.scss'],
+  providers: [AngularMagicBreadcrumbService]
 })
-export class CustomBreadcrumComponent implements OnInit {
+export class CustomBreadcrumbComponent implements OnInit {
   @Input() mainRoot: String;
   _mainRoot: String;
   lastPathname: string;
@@ -27,7 +27,7 @@ export class CustomBreadcrumComponent implements OnInit {
 
   constructor(
     private router: Router,
-    public breadcrumbService: CustomBreadcrumService,
+    public breadcrumbService: AngularMagicBreadcrumbService,
     private location: Location
   ) { }
 
