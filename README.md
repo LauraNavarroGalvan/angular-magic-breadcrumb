@@ -1,6 +1,8 @@
 # AngularMagicBreadcrumb
 
-AngularMagicBreadcrumb is a library for self-generated breadcrumb in angular 7
+AngularMagicBreadcrumb is a library for self-generated breadcrumb in
+Angular 7 --> Version 0.0.2
+Angular 8 --> Version 0.0.4
 
 # Demo
 demos available [here](https://stackblitz.com/edit/angular-magic-breadcrumb-demo)
