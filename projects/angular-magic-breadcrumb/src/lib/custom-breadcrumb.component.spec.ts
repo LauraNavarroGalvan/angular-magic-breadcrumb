@@ -1,20 +1,20 @@
+import { CustomBreadcrumbComponent } from './custom-breadcrumb.component';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AppDetailsComponent } from './app-details.component';
 
-describe('AppDetailsComponent', () => {
-  let component: AppDetailsComponent;
-  let fixture: ComponentFixture<AppDetailsComponent>;
+describe('CustomBreadcrumbComponent', () => {
+  let component: CustomBreadcrumbComponent;
+  let fixture: ComponentFixture<CustomBreadcrumbComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AppDetailsComponent ]
+      declarations: [ CustomBreadcrumbComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AppDetailsComponent);
+    fixture = TestBed.createComponent(CustomBreadcrumbComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

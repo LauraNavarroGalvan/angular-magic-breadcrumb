@@ -1,6 +1,6 @@
 {
   "name": "angular-magic-breadcrumb",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": {
     "name": "Laura Cristina Navarro Galvan",
     "email": "laura.ngalvan@gmail.com"
@@ -21,7 +21,7 @@
     "url": "https://github.com/LauraNavarroGalvan/angular-breadcrumb.git"
   },
   "peerDependencies": {
-    "@angular/common": "^7.1.0",
-    "@angular/core": "^7.1.0"
+    "@angular/common": "^8.2.14",
+    "@angular/core": "^8.2.14"
   }
 }
